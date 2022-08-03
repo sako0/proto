@@ -7,14 +7,14 @@ option go_package = "zoom-api/gen/zoom/v1;zoomv1";
 message CreateZoomRequest { string auth0_id = 1; }
 
 message CreateZoomResponse {
-  int64 id = 1;
+  uint32 id = 1;
   string created_at = 2;
   string join_url = 3;
   string start_url = 4;
   string topic = 5;
 }
 
-message GetZoomListRequest { int64 organization_id = 1; }
+message GetZoomListRequest { uint32 organization_id = 1; }
 
 message GetZoomListResponse {
   string zoom_user_id = 1;
@@ -22,7 +22,7 @@ message GetZoomListResponse {
 }
 
 message ZoomInfo {
-  int64 id = 1;
+  uint32 id = 1;
   string created_at = 2;
   string join_url = 3;
   string start_url = 4;
