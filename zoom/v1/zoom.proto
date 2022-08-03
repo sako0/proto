@@ -14,7 +14,10 @@ message CreateZoomResponse {
   string topic = 5;
 }
 
-message GetZoomListRequest { uint32 organization_id = 1; }
+message GetZoomListRequest {
+  uint32 organization_id = 1;
+  string zoom_token = 2;
+}
 
 message GetZoomListResponse { repeated ZoomInfo zoom_list = 1; }
 
