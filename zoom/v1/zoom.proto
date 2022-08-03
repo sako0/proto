@@ -16,12 +16,14 @@ message CreateZoomResponse {
 
 message GetZoomListRequest { uint32 organization_id = 1; }
 
-message GetZoomListResponse {
-  string zoom_user_id = 1;
-  repeated ZoomInfo zoom_list = 2;
-}
+message GetZoomListResponse { repeated ZoomInfo zoom_list = 1; }
 
 message ZoomInfo {
+  string zoom_user_id = 1;
+  repeated ZoomMeetingInfo zoom_meeting_list = 2;
+}
+
+message ZoomMeetingInfo {
   uint32 id = 1;
   string created_at = 2;
   string join_url = 3;
