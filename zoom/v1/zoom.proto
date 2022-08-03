@@ -34,4 +34,5 @@ message ZoomMeetingInfo {
 
 service ZoomService {
   rpc CreateZoom(CreateZoomRequest) returns (CreateZoomResponse) {}
+  rpc GetZoomList(GetZoomListRequest) returns (GetZoomListResponse) {}
 }
