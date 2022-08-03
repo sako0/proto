@@ -18,7 +18,7 @@ message GetZoomListRequest { int64 organization_id = 1; }
 
 message GetZoomListResponse {
   string zoom_user_id = 1;
-  repeated ZoomInfo ZoomList = 2;
+  repeated ZoomInfo zoom_list = 2;
 }
 
 message ZoomInfo {
